@@ -8,10 +8,12 @@
     <link rel="shortcut icon" type="image/ico"  href="favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,600,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libraries/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header>
+    <header class="header">
+        <img src="/img/Square.png" alt="Square" class="header__square">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
@@ -36,21 +38,30 @@
                     <img src="/img/Arrow.svg" alt="" class="arrow">
                     <img src="/img/Girl.svg" alt="" class="girl">
                 </div>
-                <form action="" class="form" method="po">
+                <form action="" class="form">
                     <p class="form__title">Generator</p>
-                    <select class="form__select">
-                        <option value="">APA</option>
-                    </select>
-                    <select class="form__select">
-                        <option value="">Book</option>
-                    </select>
-                    <div class="form-select">
-                        <input type="text" class="form__search">
+                    <div class="form-group">
+                        <label for="formGroupExampleInput" class="bmd-label-floating form-select_label">APA</label>
+                        <input type="text" class="form-control form-select" id="formGroupExampleInput">
+                    </div>
+                    <div class="form-group bmd-form-group">
+                        <label for="formGroupExampleInput2" class="bmd-label-floating form-select_label">Book</label>
+                        <input type="text" class="form-control form-select" id="formGroupExampleInput2">
+                    </div>
+                    <div class="form-group bmd-form-group">
+                        <label for="formGroupExampleInput2" class="bmd-label-floating form-select_label">ISBN Book or title book</label>
+                        <input type="text" class="form-control form-select" id="formGroupExampleInput2">
+                    </div>
+                    <div class="form-group bmd-form-group">
+                        <label for="formGroupExampleInput2" class="bmd-label-floating form-select_label">Author</label>
+                        <input type="text" class="form-control form-select" id="formGroupExampleInput2">
+                    </div>
+                    <div class="form-underside">
+                        <button class="form-button">Generate</button>
                     </div>
                 </form>
             </div>
         </div>
-        <!-- <img src="/img/Square.png" alt="" class="square-img"> -->
     </header>
     <main class="main">
         <img src="/img/triangle.png" alt="" class="main__triangle">
@@ -112,7 +123,10 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
     <script src="/js/script.js"></script>
 </body>
 </html>

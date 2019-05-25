@@ -1,6 +1,11 @@
 .header {
-    position: relative;
     padding: 40px 0;
+    &__square {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
     &__logo {
         display: block;
     }
@@ -27,6 +32,103 @@
                 margin-top: 11px;
                 transition: .3s;
             }
+        }
+    }
+    .heading {
+        padding-top: 10%;
+        @include bold;
+        font-size: 50px;
+        line-height: 73px;
+        color: $colorMain;
+    }
+    .subheading {
+        @include bold;
+        font-size: 24px;
+        line-height: 35px;
+        color: $colorMain
+    }
+    .get-started-btn {
+        margin-bottom: 350px;
+        border: none;
+        @include semibold;
+        font-size: 18px;
+        color: $colorMain;
+        background: transparent;
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+    }
+    .arrow {
+        margin-left: 90px;
+        animation: arrow 1.5s infinite ease-in-out;
+    }
+    @keyframes arrow {
+        0% {transform: translateX(0)}
+        100% {transform: translateX(40px)}
+    }
+    .square-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 50%;
+        height: 1000px;
+    }
+    .girl {
+        position: absolute;
+        width: 250px;
+        height: 300px;
+        left: 50%;
+        top: 40%;
+    }
+    .form {
+        width: 350px;
+        background: #ffffff;
+        position: absolute;
+        right: 15%;
+        top: 30%;
+        border-radius: 20px;
+        box-shadow: 0px 40px 80px rgba(35, 38, 66, 0.4);
+        &__title {
+            background: #F8F7FC;
+            border-radius: 20px 20px 0px 0px;
+            padding: 30px 30px;
+            margin: 0;
+            @include bold;
+            color: $colorMain;
+            font-size: 24px;
+        }
+        &-select {
+            width: 300px;
+            margin: 0 auto;
+            color: $colorMain;
+            @include semibold;
+            font-size: 16px;
+        }
+        &-select_label {
+            left: 25px;
+            color: $colorMain;
+            @include semibold;
+            font-size: 16px;
+        }
+        &-group {
+            margin: 0;
+        }
+        &-underside {
+            margin-top: 10px;
+            border-radius: 0 0 20px 20px;
+            background: #F8F7FC;
+            padding: 35px 30px;
+        }
+        &-button {
+            text-transform: uppercase;
+            background: #F9703E;
+            box-shadow: 0px 10px 25px rgba(233, 101, 52, 0.5);
+            border-radius: 100px;
+            border: none;
+            color: #ffffff;
+            padding: 19px 100px;
+            cursor: pointer;
         }
     }
 }

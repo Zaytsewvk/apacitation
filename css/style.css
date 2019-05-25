@@ -1,6 +1,12 @@
 .header {
-  position: relative;
   padding: 40px 0;
+}
+
+.header__square {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
 }
 
 .header__logo {
@@ -45,15 +51,7 @@
   transition: .3s;
 }
 
-.main {
-  overflow: hidden;
-}
-
-.main__triangle {
-  margin-bottom: -5px;
-}
-
-.heading {
+.header .heading {
   padding-top: 10%;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 800;
@@ -62,7 +60,7 @@
   color: #232642;
 }
 
-.subheading {
+.header .subheading {
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 800;
   font-size: 24px;
@@ -70,8 +68,8 @@
   color: #232642;
 }
 
-.get-started-btn {
-  margin-bottom: 40%;
+.header .get-started-btn {
+  margin-bottom: 350px;
   border: none;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 600;
@@ -83,7 +81,7 @@
   cursor: pointer;
 }
 
-.arrow {
+.header .arrow {
   margin-left: 90px;
   -webkit-animation: arrow 1.5s infinite ease-in-out;
           animation: arrow 1.5s infinite ease-in-out;
@@ -111,7 +109,7 @@
   }
 }
 
-.square-img {
+.header .square-img {
   position: absolute;
   top: 0;
   right: 0;
@@ -120,27 +118,26 @@
   height: 1000px;
 }
 
-.girl {
+.header .girl {
   position: absolute;
-  width: 200px;
+  width: 250px;
   height: 300px;
   left: 50%;
-  top: 30%;
+  top: 40%;
 }
 
-.form {
-  width: 300px;
-  height: 400px;
+.header .form {
+  width: 350px;
   background: #ffffff;
   position: absolute;
-  right: 18%;
-  top: 40%;
+  right: 15%;
+  top: 30%;
   border-radius: 20px;
   -webkit-box-shadow: 0px 40px 80px rgba(35, 38, 66, 0.4);
           box-shadow: 0px 40px 80px rgba(35, 38, 66, 0.4);
 }
 
-.form__title {
+.header .form__title {
   background: #F8F7FC;
   border-radius: 20px 20px 0px 0px;
   padding: 30px 30px;
@@ -151,18 +148,52 @@
   font-size: 24px;
 }
 
-.form__select {
-  border: none;
-  border-bottom: 1px solid #000;
-  display: block;
-  width: 90%;
-  margin: 10px auto;
+.header .form-select {
+  width: 300px;
+  margin: 0 auto;
+  color: #232642;
   font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 600;
   font-size: 16px;
+}
+
+.header .form-select_label {
+  left: 25px;
   color: #232642;
-  outline: none;
-  padding: 5px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.header .form-group {
+  margin: 0;
+}
+
+.header .form-underside {
+  margin-top: 10px;
+  border-radius: 0 0 20px 20px;
+  background: #F8F7FC;
+  padding: 35px 30px;
+}
+
+.header .form-button {
+  text-transform: uppercase;
+  background: #F9703E;
+  -webkit-box-shadow: 0px 10px 25px rgba(233, 101, 52, 0.5);
+          box-shadow: 0px 10px 25px rgba(233, 101, 52, 0.5);
+  border-radius: 100px;
+  border: none;
+  color: #ffffff;
+  padding: 19px 100px;
+  cursor: pointer;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.main__triangle {
+  margin-bottom: -5px;
 }
 
 .section2 {
