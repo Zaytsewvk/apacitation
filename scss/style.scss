@@ -1,0 +1,15 @@
+@import 'fonts';
+@import 'color';
+@import 'header';
+@import 'main';
+@import 'footer';
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: #ECEBF0;
+    padding: 0;
+    margin: 0;
+}

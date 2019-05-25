@@ -1,0 +1,228 @@
+.main {
+    overflow: hidden;
+}
+.heading {
+    padding-top: 10%;
+    @include bold;
+    font-size: 50px;
+    line-height: 73px;
+    color: $colorMain;
+}
+.subheading {
+    @include bold;
+    font-size: 24px;
+    line-height: 35px;
+    color: $colorMain
+}
+.get-started-btn {
+    margin-bottom: 40%;
+    border: none;
+    @include semibold;
+    font-size: 18px;
+    color: $colorMain;
+    background: transparent;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+.arrow {
+    margin-left: 90px;
+    animation: arrow 1.5s infinite ease-in-out;
+}
+@keyframes arrow {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(40px)}
+}
+.square-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 50%;
+    height: 1000px;
+}
+.girl {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 50%;
+    top: 30%;
+}
+.form {
+    width: 300px;
+    height: 400px;
+    background: #ffffff;
+    position: absolute;
+    right: 18%;
+    top: 40%;
+    border-radius: 20px;
+    box-shadow: 0px 40px 80px rgba(35, 38, 66, 0.4);
+    &__title {
+        background: #F8F7FC;
+        border-radius: 20px 20px 0px 0px;
+        padding: 30px 30px;
+        margin: 0;
+        @include bold;
+        color: $colorMain;
+        font-size: 24px;
+    }
+    &__select {
+        border: none;
+        border-bottom: 1px solid #000;
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        @include semibold;
+        font-size: 16px;
+        color: $colorMain;
+        outline: none;
+        padding: 5px;
+    }
+}
+.section2 {
+    background: #E3E0F6;
+    position: relative;
+    &__title {
+        color: $colorMain;
+        font-size: 36px;
+        line-height: 61px;
+        @include bold;
+        margin: 20px 0;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 31px;
+        color: $colorMain;
+        @include light;
+        height: 510px;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+    &__btn {
+        border: 2px solid #232642;
+        border-radius: 100px;
+        margin: 30px 0;
+        padding: 20px 70px;
+        color: $colorMain;
+        @include semibold;
+        font-size: 18px;
+        line-height: 22px;
+        background: transparent;
+        outline: none;
+    }
+    &__blockquote {
+        @include bold;
+        font-size: 36px;
+        color: $colorMain;
+        line-height: 50px;
+        position: relative;
+        top: 450px;
+        left: 50px;
+        &::before {
+            content: "\201C";
+            display: inline-block;
+            @include bold;
+            font-size: 86px;
+            color: $colorMain;
+            position: absolute;
+            top: 5px;
+            left: -70px;
+        }
+    }
+}
+.section3 {
+    overflow: hidden;
+    max-height: 500px;
+    position: relative;
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%;
+        background: #433795;
+        opacity: 0;
+    }
+    .bulba {
+        background: url('/img/Bulba.png') no-repeat center;
+        background-size: contain;
+        position: relative;
+        height: 560px;
+        top: 250px;
+        &-title {
+            font-size: 40px;
+            line-height: 59px;
+            @include bold;
+            color: $colorMain;
+            position: relative;
+            top: 150px;
+            left: 200px;
+            width: 100%;
+        }
+        &-description {
+            font-size: 24px;
+            line-height: 35px;
+            @include bold;
+            color: $colorMain;
+            position: relative;
+            top: 140px;
+            left: 200px;
+            width: 100%;
+        }
+        &-img {
+            position: absolute;
+            top: 130px;
+            right: 150px;
+        }
+    }
+}   
+.section4 {
+    height: 100vh;
+    position: relative;
+    &-img {
+        margin: 70px 0;
+        margin-left: 100px;
+        width: 60%;
+    }
+    &__text {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 70px 0;
+        margin-right: 100px;
+        width: 100%;
+        height: 500px;
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 20px;
+            background: #433795;
+        }
+        &::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+            border-radius: 20px;
+        }
+    }
+    &-title {
+        @include bold;
+        font-size: 36px;
+        line-height: 61px;
+        color: $colorMain;
+        margin: 0;
+        margin-bottom: 70px;
+    }
+    &-description {
+        @include light;
+        font-size: 18px;
+        line-height: 31px;
+        color: $colorMain;
+    }
+}
+
+
+@media(min-width: 1920px) {
+    .triangle-img {
+        margin-top: 10px;
+    }
+}
