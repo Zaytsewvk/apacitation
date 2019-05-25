@@ -26,7 +26,7 @@
     &__btn {
         border: 2px solid #232642;
         border-radius: 100px;
-        margin: 30px 0;
+        margin: 30px 0 60px 0;
         padding: 20px 70px;
         color: $colorMain;
         @include semibold;
@@ -73,7 +73,7 @@
         background-size: contain;
         position: relative;
         height: 560px;
-        top: 250px;
+        top: 300px;
         &-title {
             font-size: 40px;
             line-height: 59px;
@@ -102,7 +102,7 @@
     }
 }   
 .section4 {
-    height: 100vh;
+    height: 750px;
     position: relative;
     &-img {
         margin: 70px 0;
