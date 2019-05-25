@@ -49,6 +49,10 @@
   overflow: hidden;
 }
 
+.main__triangle {
+  margin-bottom: -5px;
+}
+
 .heading {
   padding-top: 10%;
   font-family: 'Montserrat Alternates', sans-serif;

@@ -1,5 +1,8 @@
 .main {
     overflow: hidden;
+    &__triangle {
+        margin-bottom: -5px;
+    }
 }
 .heading {
     padding-top: 10%;
