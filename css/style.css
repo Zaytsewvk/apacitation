@@ -276,7 +276,7 @@
 }
 
 .section3 .bulba {
-  background: url("/img/Bulba.png") no-repeat center;
+  background: url("../img/Bulba.png") no-repeat center;
   background-size: contain;
   position: relative;
   height: 560px;
