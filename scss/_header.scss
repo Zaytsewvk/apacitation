@@ -22,6 +22,10 @@
             position: relative;
             font-style: 16px;
             @include bold;
+            &:hover {
+                color: $colorLink;
+                text-decoration: none;
+            }
             &:hover::after {
                 position: absolute;
                 width: 100%;

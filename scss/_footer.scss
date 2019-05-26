@@ -19,6 +19,10 @@
             line-height: 20px;
             position: relative;
             @include bold;
+            &:hover {
+                text-decoration: none;
+                color: $colorLink;
+            }
             &:hover::after {
                 position: absolute;
                 width: 100%;
